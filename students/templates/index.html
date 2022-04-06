@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Mi página principal</title>
+    </head>
+    
+    <body>
+        <h1>Hola, estas en mi página principal</h1>
+        
+        <table border=1>
+            <thead>
+                <th>Nombre</th>
+                <th>Codigo</th>
+                <th>Curso</th>
+            </thead>
+            <tbody>
+                {% for dato in alumnos %}
+                <tr>
+                <td>{{ dato.name }}</td>
+                <td>{{ dato.cod }}</td>
+                <td>{{ dato.course }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+    </body>
+</html>
